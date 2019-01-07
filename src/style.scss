@@ -170,6 +170,40 @@ body	{margin: 0;
   }
 }
 
+// Section 共通
+.sec {
+  h2 {
+    font-family: 'Mplus 1p', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .spot {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px #aaa;
+    border-radius: 50%;
+    display: block;
+    width: 3.75em;
+    height: 3.75em;
+    line-height: 3.75em;
+  }
+  .num {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 78px;
+    font-weight: 300;
+    line-height: 1;
+  }
+}
+
 // section01
 .sec01 {
   grid-column: 2 / -2;
@@ -188,6 +222,10 @@ body	{margin: 0;
   figure {
     grid-column: 1;
     grid-row: 1 / -1;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
   p {
     grid-column: 2;
@@ -217,10 +255,16 @@ body	{margin: 0;
   .fig01 {
     grid-column: 1;
     grid-row: 2 / 4;
+    margin-bottom: 40px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .fig02 {
     grid-column: 2;
     grid-row: 3;
+    margin-left: -40px;
   }
   p {
     grid-column: 2;
@@ -257,7 +301,6 @@ body	{margin: 0;
     grid-column: 1;
     grid-row: 4;
   }
-
 }
 
 // フッター
