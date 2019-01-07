@@ -445,3 +445,16 @@ body	{margin: 0;
   font-weight: 700;
   text-align: center;
 }
+
+// 1000px over
+@media (min-width: 1000px) {
+  .post {
+    --side: calc( (100vw - 960px) / 2 );
+  }
+  .post-head .post-title {
+    font-size: 40px;
+  }
+  .sec h2 {
+    font-size: 24px;
+  }
+}
