@@ -25,6 +25,21 @@ body	{margin: 0;
   // grid-template-columns: 20px 1fr 50px 1fr 20px;
   grid-template-columns: var(--side) 1fr 50px 1fr var(--side);
   grid-template-rows: auto 30px auto 40px auto 30px auto; 
+  &::before {
+    grid-column: 2 / -2;
+    grid-row: 4;
+    align-self: center;
+    content: '';
+    border-top: dotted 6px #ddd;
+  }
+  &::after {
+    grid-column: 3;
+    grid-row: 5;
+    justify-self: center;
+    content: '';
+    border-left: dotted 6px #ddd;
+  }
+
 }
 
 // ヘッダー
@@ -422,4 +437,11 @@ body	{margin: 0;
 .post-foot {
   grid-column: 1 / -1;
   grid-row: -2;
+  padding: 30px 0;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
 }
