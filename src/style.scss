@@ -24,3 +24,33 @@ body	{margin: 0;
   grid-template-columns: 20px 1fr 50px 1fr 20px;
   grid-template-rows: auto 30px auto 40px auto 30px auto; 
 }
+
+// ヘッダー
+.post-head {
+  grid-column: 2 / -2;
+  grid-row: 1;
+}
+
+// section01
+.sec01 {
+  grid-column: 2 / -2;
+  grid-row: 3;
+}
+
+// section02
+.sec02 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+// section03
+.sec03 {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+// フッター
+.post-foot {
+  grid-column: 1 / -1;
+  grid-row: -2;
+}
