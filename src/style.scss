@@ -174,18 +174,90 @@ body	{margin: 0;
 .sec01 {
   grid-column: 2 / -2;
   grid-row: 3;
+
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 15px;
+
+  h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  figure {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+  p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .shop {
+    grid-column: 2;
+    grid-row: 3;
+  }
 }
 
 // section02
 .sec02 {
   grid-column: 2;
   grid-row: 5;
+
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-template-rows: auto 1fr auto auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+
+  h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .fig01 {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+  .fig02 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .shop {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
 }
 
 // section03
 .sec03 {
   grid-column: 4;
   grid-row: 5;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  row-gap: 15px;
+  h2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .figure {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  p {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .shop {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
 }
 
 // フッター
